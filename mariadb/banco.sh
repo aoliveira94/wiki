@@ -33,7 +33,7 @@ if [ "$MYSQL_ROOT_PASSWORD" = "" ]; then
   cat << sha > $root
 	#!/bin/bash
 
-	mysql -uroot -p mysql  --password="wiki" -e " SET PASSWORD FOR 'root'@'localhost'=PASSWORD('$MYSQL_ROOT_PASSWORD') ;" 
+	mysql -uroot  mysql  -e " UPDATE user SET Password=PASSWORD('$MYSQL_ROOT_PASSWORD') WHERE User='root'; "
  	
 	mysql -uroot -p mysql    --password="$MYSQL_ROOT_PASSWORD" -e    "GRANT ALL ON *.* TO 'root'@'%' identified by '$MYSQL_ROOT_PASSWORD' WITH GRANT OPTION ;"
 
@@ -55,7 +55,7 @@ fi
 
 #!/bin/bash
 
-mysql -uroot -p mysql  --password="$MYSQL_ROOT_PASSWORD" -e    "CREATE USER '$MYSQL_USER'@'%' IDENTIFIED BY '$MYSQL_PASSWORD';"
+mysql -uroot -p mysql  --password="$MYSQL_ROOT_PASSWORD" -e  "CREATE USER '$MYSQL_USER'@'%' IDENTIFIED BY '$MYSQL_PASSWORD';"
 
 mysql -uroot -p mysql  --password="$MYSQL_ROOT_PASSWORD" -e	"CREATE USER '$MYSQL_USER'@'localhost' IDENTIFIED BY '$MYSQL_PASSWORD';"
 	
@@ -65,7 +65,7 @@ mysql -uroot -p mysql  --password="$MYSQL_ROOT_PASSWORD" -e	"GRANT ALL PRIVILEGE
 
 mysql -uroot -p mysql  --password="$MYSQL_ROOT_PASSWORD" -e	"FLUSH PRIVILEGES;"
 
-mysql -uroot -p  mysql  --password="$MYSQL_ROOT_PASSWORD" -e	"create database $MYSQL_DATABASE;"
+mysql -uroot -p  mysql  --password="$MYSQL_ROOT_PASSWORD" -e "create database $MYSQL_DATABASE;"
 
 EOF
  
