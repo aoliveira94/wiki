@@ -35,14 +35,14 @@ if [ "$MYSQL_ROOT_PASSWORD" = "" ]; then
 
 	mysql -uroot -p mysql  --password="wiki" -e " SET PASSWORD FOR 'root'@'localhost'=PASSWORD('$MYSQL_ROOT_PASSWORD') ;" 
  	
-	mysql -uroot -p mysql    --password="$MYSQL_ROOT_PASSWORD" -e    "GRANT ALL ON *.* TO 'root'@'%' identified by 'wiki' WITH GRANT OPTION ;"
+	mysql -uroot -p mysql    --password="$MYSQL_ROOT_PASSWORD" -e    "GRANT ALL ON *.* TO 'root'@'%' identified by '$MYSQL_ROOT_PASSWORD' WITH GRANT OPTION ;"
 
-	mysql -uroot -p mysql    --password="$MYSQL_ROOT_PASSWORD" -e     " GRANT ALL ON *.* TO 'root'@'localhost' identified by 'wiki' WITH GRANT OPTION ;"
+	mysql -uroot -p mysql    --password="$MYSQL_ROOT_PASSWORD" -e     " GRANT ALL ON *.* TO 'root'@'localhost' identified by '$MYSQL_ROOT_PASSWORD' WITH GRANT OPTION ;"
 
 	mysql -uroot -p mysql    --password="$MYSQL_ROOT_PASSWORD" -e    "  FLUSH PRIVILEGES ; "
 sha
  
-bash /tmp/sa.sh 
+bash /tmp/sa.sh 	
 
 if [ -n "$(mysql -uroot -p --password="$MYSQL_ROOT_PASSWORD" -e "SHOW DATABASES LIKE '${MYSQL_DATABASE}';" | grep ${MYSQL_DATABASE})" ]; then
         echo "[!] Database ja existente"
