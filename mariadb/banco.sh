@@ -22,7 +22,7 @@ if [ "$MYSQL_ROOT_PASSWORD" = "" ]; then
 	MYSQL_USER=${MYSQL_USER:-""}
 	MYSQL_PASSWORD=${MYSQL_PASSWORD:-""}
 
-    mysql -uroot mysql -e " SET PASSWORD FOR 'root'@'localhost'=PASSWORD('$MYSQL_ROOT_PASSWORD') ;" > /dev/null 2>&1
+    mysql -uroot -p mysql --password="wiki" -e " SET PASSWORD FOR 'root'@'localhost'=PASSWORD('$MYSQL_ROOT_PASSWORD') ;" > /dev/null 2>&1
 
 if [ -n "$(mysql -uroot -p --password="$MYSQL_ROOT_PASSWORD" -e "SHOW DATABASES LIKE '${MYSQL_DATABASE}';" | grep ${MYSQL_DATABASE})" ]; then
         echo "[!] Database ja existente"
