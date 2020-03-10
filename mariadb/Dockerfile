@@ -9,5 +9,5 @@ RUN  apk --no-cache upgrade \
      EXPOSE 3306
      COPY my.cnf /etc/mysql/
      COPY start.sh /etc/init.d/
-     COPY banco.sh  /etc/init.d/
-     CMD ["sh", "/etc/init.d/start.sh"]
+     COPY run.sh  /etc/init.d/
+     CMD ["/etc/init.d/start.sh"]

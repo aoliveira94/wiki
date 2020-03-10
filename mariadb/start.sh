@@ -13,11 +13,7 @@ chown mysql:mysql /run/mysqld/
 mysql_install_db --user=mysql --ldata=/var/lib/mysql/ --basedir=/usr/ > /dev/null 2>&1
 
 #EXECUTANDO ALTERAÇÃO DE USUARIO E CRIANDO O USUARIO O WIKI  E CRIANDO A TABELA!
-bash /etc/init.d/banco.sh &
+bash /etc/init.d/run.sh &
 
 #STARTANDO O SERVIÇO DO MYSQL 
 /usr/bin/mysqld_safe > /dev/null 2>&1
-
-
-
-
