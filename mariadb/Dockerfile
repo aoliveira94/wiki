@@ -10,4 +10,4 @@ RUN  apk --no-cache upgrade \
      COPY my.cnf /etc/mysql/
      COPY start.sh /etc/init.d/
      COPY run.sh  /etc/init.d/
-     CMD ["/etc/init.d/start.sh"]
+     CMD ["bash", "/etc/init.d/start.sh"]
