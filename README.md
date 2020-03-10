@@ -2,7 +2,7 @@ Instalação da wiki;
 
 Fazer o git clone;
 
-Aterar docker-compose na parte do banco para suas credencial pessoal, por padrão tudo vai como wiki;
+Alterar docker-compose na parte do banco para suas credencial pessoal, por padrão tudo vai como wiki;
 
 docker-compose up -d
 
