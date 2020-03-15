@@ -1,0 +1,26 @@
+2020-03-13  2:23:24 140276455050120 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-03-13  2:23:24 140276455050120 [Note] InnoDB: Uses event mutexes
+2020-03-13  2:23:24 140276455050120 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2020-03-13  2:23:24 140276455050120 [Note] InnoDB: Using Linux native AIO
+2020-03-13  2:23:24 140276455050120 [Note] InnoDB: Number of pools: 1
+2020-03-13  2:23:24 140276455050120 [Note] InnoDB: Using SSE2 crc32 instructions
+2020-03-13  2:23:24 140276455050120 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-03-13  2:23:24 140276455050120 [Note] InnoDB: Completed initialization of buffer pool
+2020-03-13  2:23:24 140276230445800 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-03-13  2:23:24 140276455050120 [Note] InnoDB: Highest supported file format is Barracuda.
+2020-03-13  2:23:24 140276455050120 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2020-03-13  2:23:24 140276455050120 [Note] InnoDB: Creating shared tablespace for temporary tables
+2020-03-13  2:23:24 140276455050120 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2020-03-13  2:23:24 140276455050120 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2020-03-13  2:23:24 140276455050120 [Note] InnoDB: Waiting for purge to start
+2020-03-13  2:23:24 140276455050120 [Note] InnoDB: 5.7.28 started; log sequence number 1619987
+2020-03-13  2:23:24 140276235770600 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2020-03-13  2:23:24 140276235770600 [Note] InnoDB: Buffer pool(s) load completed at 200313  2:23:24
+2020-03-13  2:23:24 140276455050120 [Note] Plugin 'FEEDBACK' is disabled.
+2020-03-13  2:23:24 140276455050120 [Note] Server socket created on IP: '::'.
+2020-03-13  2:23:24 140276455050120 [Note] Reading of all Master_info entries succeeded
+2020-03-13  2:23:24 140276455050120 [Note] Added new Master_info '' to hash table
+2020-03-13  2:23:24 140276455050120 [Note] /usr/bin/mysqld: ready for connections.
+Version: '10.2.29-MariaDB-log'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2020-03-13  2:23:27 140276092816104 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2020-03-13  2:23:27 140276092816104 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
