@@ -1,18 +1,18 @@
 Instalação da wiki em Docker
-------------------------------------------------------------
+-----------
 REQUISITOS
-------------
+----------------------
 * Docker 
 * Docker compose
-------------------
+-------------
 LINKS PARA INSTALAÇÃO 
 ---------------------
 Docker - Engine
 ----------
 https://docs.docker.com/install/linux/docker-ce/debian/
-----------------------
+----------
 Docker compose
--------------
+----------
 https://docs.docker.com/compose/install/
 -------------
 Procedimentos
