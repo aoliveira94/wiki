@@ -18,9 +18,9 @@ https://docs.docker.com/compose/install/
 Procedimentos
 --------------------------------------------------
 
-* Alterar docker-compose na parte do banco para suas credencial pessoal, padrão vai como wiki.
-vim docker-compose.yml
-Apos alteração das credencial executar o comando abaixo;
+* Alterar docker-compose na parte do banco para suas credencial pessoal, padrão vai como wiki.\
+vim docker-compose.yml \
+* Apos alteração das credencial executar o comando abaixo;
 -------
 * docker-compose up -d
 ------------
@@ -36,4 +36,4 @@ Apos alteração das credencial executar o comando abaixo;
 
 OBSERVAÇÃO
 ---------------------------------
-Caso tenha apache ou nginx e banco de dados instalado  no seu sitema, tem que para os serviços deles, para não conflitar com os conteiner do docker.
+Caso tenha apache ou nginx e banco de dados instalado  no seu sistema, tem que para os serviços deles, para não conflitar com os conteiner do docker.
