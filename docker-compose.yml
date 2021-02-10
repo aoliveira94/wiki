@@ -32,10 +32,10 @@ services:
     mysql:
       image: aoliveiraa/mariadb:1.0
       environment:  
-          MYSQL_ROOT_PASSWORD: wiki
-          MYSQL_DATABASE: wiki
-          MYSQL_USER: wiki
-          MYSQL_PASSWORD: wiki
+          MYSQL_ROOT_PASSWORD: "SuaSenha"
+          MYSQL_DATABASE: "SuaSenha"
+          MYSQL_USER: "SuaSenha"
+          MYSQL_PASSWORD: "SuaSenha"
 
       ports:  
         - "3306:3306"  
